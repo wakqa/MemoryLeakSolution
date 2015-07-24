@@ -1,0 +1,491 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"MyClass": {
+				"panelColor": "#B7DDE8",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 401,
+						"Y": 17
+					}
+				}
+			},
+			"MyClassForCreate": {
+				"panelColor": "#548DD4",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 25,
+						"Y": 20
+					}
+				}
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0,
+			"lastScriptLocation": {
+				"MyClass": {
+					"method": "MyClass/MyClass-methods.js"
+				}
+			}
+		}
+	},
+	"dataClasses": [
+		{
+			"name": "MyClass",
+			"className": "MyClass",
+			"collectionName": "MyClassCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "as_string",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "as_string_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_string_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_string_keywords",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"indexKind": "keywords"
+				},
+				{
+					"name": "as_number",
+					"kind": "storage",
+					"matchColumn": "as_long",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "as_number_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_number_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_byte",
+					"kind": "storage",
+					"scope": "public",
+					"type": "byte"
+				},
+				{
+					"name": "as_byte_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "byte",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_byte_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "byte",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_word",
+					"kind": "storage",
+					"scope": "public",
+					"type": "word"
+				},
+				{
+					"name": "as_word_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "word",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_word_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "word",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_long",
+					"kind": "storage",
+					"matchColumn": "as_long64",
+					"scope": "public",
+					"type": "long"
+				},
+				{
+					"name": "as_long_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_long_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_long64",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long64"
+				},
+				{
+					"name": "as_long64_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long64",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_long64_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long64",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_date",
+					"kind": "storage",
+					"matchColumn": "as",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "as_date_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false,
+					"indexKind": "btree"
+				},
+				{
+					"name": "a_date_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false,
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_duration",
+					"kind": "storage",
+					"scope": "public",
+					"type": "duration"
+				},
+				{
+					"name": "as_duration_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "duration",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_duration_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "duration",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_bool",
+					"kind": "storage",
+					"matchColumn": "s",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "as_bool_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_bool_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_object",
+					"kind": "storage",
+					"scope": "public",
+					"type": "object"
+				},
+				{
+					"name": "as_object_indexed",
+					"kind": "storage",
+					"scope": "public",
+					"type": "object",
+					"indexKind": "objectPath"
+				}
+			]
+		},
+		{
+			"name": "MyClassForCreate",
+			"className": "MyClassForCreate",
+			"collectionName": "MyClassForCreateCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "as_string",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "as_string_btree",
+					"kind": "storage",
+					"scope": null,
+					"type": "string",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_string_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_string_keywords",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string",
+					"indexKind": "keywords"
+				},
+				{
+					"name": "as_number",
+					"kind": "storage",
+					"matchColumn": "as_long",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "as_number_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_number_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_byte",
+					"kind": "storage",
+					"scope": "public",
+					"type": "byte"
+				},
+				{
+					"name": "as_byte_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "byte",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_byte_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "byte",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_word",
+					"kind": "storage",
+					"scope": "public",
+					"type": "word"
+				},
+				{
+					"name": "as_word_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "word",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_word_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "word",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_long",
+					"kind": "storage",
+					"matchColumn": "as_long64",
+					"scope": "public",
+					"type": "long"
+				},
+				{
+					"name": "as_long_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_long_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_long64",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long64"
+				},
+				{
+					"name": "as_long64_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long64",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_long64_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long64",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_date",
+					"kind": "storage",
+					"matchColumn": "as",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "as_date_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false,
+					"indexKind": "btree"
+				},
+				{
+					"name": "a_date_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false,
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_duration",
+					"kind": "storage",
+					"scope": "public",
+					"type": "duration"
+				},
+				{
+					"name": "as_duration_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "duration",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_duration_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "duration",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_bool",
+					"kind": "storage",
+					"matchColumn": "s",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "as_bool_btree",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool",
+					"indexKind": "btree"
+				},
+				{
+					"name": "as_bool_cluster",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool",
+					"indexKind": "cluster"
+				},
+				{
+					"name": "as_object",
+					"kind": "storage",
+					"scope": "public",
+					"type": "object"
+				},
+				{
+					"name": "as_object_indexed",
+					"kind": "storage",
+					"scope": "public",
+					"type": "object",
+					"indexKind": "objectPath"
+				}
+			]
+		}
+	],
+	"type": []
+}
