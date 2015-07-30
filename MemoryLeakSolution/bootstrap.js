@@ -4,3 +4,8 @@ ds.MyClass.setAutoSequenceNumber(1);
 ds.MyClassForDelete
 ds.MyClassForCreate.setAutoSequenceNumber(1);
 DataGenUtils.generateData(ds.MyClass,5000,false);
+addHttpRequestHandler('/s_number','script.js','s_number')
+addHttpRequestHandler('/s_string','script.js','s_string')
+addHttpRequestHandler('/s_long','script.js','s_long')
+addHttpRequestHandler('/s_date','script.js','s_date')
+addHttpRequestHandler('/fill','script.js','fill')
